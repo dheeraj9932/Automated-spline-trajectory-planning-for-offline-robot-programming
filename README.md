@@ -2,19 +2,20 @@
 ---
 ## KUKA LBR IIWA 7 R800
 
-![[kuka_components.png]]
-![[kuka_work_envelope.png]]
+![KUKA robot and its components](kuka_components.png)
+![KUKA robot's working envelope](kuka_work_envelope.png)
 
-## Robot's trajectory (Blue) vs Generated trajectory (red)
+## Robot's trajectory (Blue) vs Generated trajectory (red): 
+==The better the result, the better the trajectories match==
 
-![[exp_03_all_exp_optimised_vs_individual_optimised.png]]
-![[exp_07_all_exp_optimised_vs_individual_optimised.png]]
-![[exp_10_all_exp_optimised_vs_individual_optimised.png]]
-![[exp_16_all_exp_optimised_vs_individual_optimised_1.png]]
-![[quintic_path_planning_segment_traj.png]]
+![Trajectory comparison 1](exp_03_all_exp_optimised_vs_individual_optimised.png)
+![Trajectory comparison 2](exp_07_all_exp_optimised_vs_individual_optimised.png)
+![Trajectory comparison 3](exp_10_all_exp_optimised_vs_individual_optimised.png)
+![Trajectory comparison 4](exp_16_all_exp_optimised_vs_individual_optimised_1.png)
+![Trajectory comparison 5](quintic_path_planning_segment_traj.png)
 
-Paths that the robot has takes
-![[8_sep_test2.png]]
+
+![Paths that the robot has taken](8_sep_test2.png)
 
 
 

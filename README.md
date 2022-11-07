@@ -1,6 +1,24 @@
 # Automated trajectory planning for offline robot programming
-## Project timeline, flow directions and corresponding justifications 
 ---
+## KUKA LBR IIWA 7 R800
+
+![[kuka_components.png]]
+![[kuka_work_envelope.png]]
+
+## Robot's trajectory (Blue) vs Generated trajectory (red)
+
+![[exp_03_all_exp_optimised_vs_individual_optimised.png]]
+![[exp_07_all_exp_optimised_vs_individual_optimised.png]]
+![[exp_10_all_exp_optimised_vs_individual_optimised.png]]
+![[exp_16_all_exp_optimised_vs_individual_optimised_1.png]]
+![[quintic_path_planning_segment_traj.png]]
+
+Paths that the robot has takes
+![[8_sep_test2.png]]
+
+
+
+
 - 14 Apr
 	Project description_Project goals and sub tasks:
 		1.  Fixing/deciding on an optimizing criteria for trajectory planning.

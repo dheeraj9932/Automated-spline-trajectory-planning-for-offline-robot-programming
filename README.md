@@ -2,7 +2,7 @@
 ---
 ## KUKA LBR IIWA 7 R800
 
-![KUKA robot and its components](kuka_components.png)
+![KUKA robot and its components](kuka_components.png)*KUKA robot and its components*
 ![KUKA robot's working envelope](kuka_work_envelope.png)
 
 ## Robot's trajectory (Red) vs Generated trajectory (Blue): 

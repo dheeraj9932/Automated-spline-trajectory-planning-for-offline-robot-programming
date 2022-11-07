@@ -3,19 +3,19 @@
 ## KUKA LBR IIWA 7 R800
 
 ![KUKA robot and its components](kuka_components.png)*KUKA robot and its components*
-![KUKA robot's working envelope](kuka_work_envelope.png)
+![KUKA robot's working envelope](kuka_work_envelope.png)*KUKA robot's working envelope*
 
 ## Robot's trajectory (Red) vs Generated trajectory (Blue): 
 ==The better the result, the better the trajectories match==
 
-![Trajectory comparison 1](exp_03_all_exp_optimised_vs_individual_optimised.png)
-![Trajectory comparison 2](exp_07_all_exp_optimised_vs_individual_optimised.png)
-![Trajectory comparison 3](exp_10_all_exp_optimised_vs_individual_optimised.png)
-![Trajectory comparison 4](exp_16_all_exp_optimised_vs_individual_optimised_1.png)
-![Trajectory comparison 5](quintic_path_planning_segment_traj.png)
+![Trajectory comparison 1](exp_03_all_exp_optimised_vs_individual_optimised.png)*Trajectory comparison 1*
+![Trajectory comparison 2](exp_07_all_exp_optimised_vs_individual_optimised.png)*Trajectory comparison 2*
+![Trajectory comparison 3](exp_10_all_exp_optimised_vs_individual_optimised.png)*Trajectory comparison 3*
+![Trajectory comparison 4](exp_16_all_exp_optimised_vs_individual_optimised_1.png)*Trajectory comparison 4*
+![Trajectory comparison 5](quintic_path_planning_segment_traj.png)*Trajectory comparison 5*
 
 
-![Paths that the robot has taken](8_sep_test2.png)
+![](8_sep_test2.png)*Visualization of all the Paths that the robot has taken all at once*
 
 
 

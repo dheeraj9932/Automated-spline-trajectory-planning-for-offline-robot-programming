@@ -1,7 +1,7 @@
-# start
+# Automated trajectory planning for offline robot programming
+## Project timeline, flow directions and corresponding justifications 
 ---
 - 14 Apr
-	- [[14_apr_2020_task1_project_description.pdf]]
 	Project description_Project goals and sub tasks:
 		1.  Fixing/deciding on an optimizing criteria for trajectory planning.
 			1. Literature review on various optimization criteria based of area of application
@@ -22,7 +22,6 @@
 		- traslation and rotation (position:cartesian || rotation: euler xyz)
 		- joint types: revolute, prismatic, spherical...
 		- joint modes: passive mode, inverse kinematic mode, dependen- 14 Apr
-	- refer to "14_apr_2020_task1_project_description.pdf"
 	Project description_Project goals and sub tasks:
 		1.  Fixing/deciding on an optimizing criteria for trajectory planning.
 			1. Literature review on various optimization criteria based of area of application
@@ -55,14 +54,11 @@
 		- inverse kinematics implementation
 		- Recieved DH parameters of KUKA robot and  input joint angles + necessary inputs needed for inverse kinematics.
 - 15 may 2020
-	- Nadia gave a detailed introduction to DH convention and KUKA.
+	- Project supervisor gave a detailed introduction to DH convention and KUKA.
 - 28 may 2020
 	- Inverse kinematics is implemented successfully, according to the paper "2018_Position-based kinematics for 7-DoF serial manipulators with global configuration control, joint limit and singularity avoidance"
 ---
 - june 2020
-	- [[5_june_2020_weekly_meeting]]
-	- [[12_june_2020_weekly_meeting]]
-	- [[15_june_2020_Road map2.pdf]]
 	- OMPL - for trajectory planning
 		- other opensource softwares that can be used for motion planning: MoveIt, CHOMP trajectory optimiser, TrajOpt, GPMP2.
 	- Extracting CAD information from dxf files
@@ -109,7 +105,7 @@
 - 12 April 2021
 	- New experiment is conducted with newly generated control points. For all the points generated the following checks are performed:
 		- Cheking if the points are inside Kuka's accessility range
-		- checking if the remaining points can be reached by kuka robot by doing Inverse kinematics, using [this](2018_Position-based kinematics for 7-DoF serial manipulators with global configuration control, joint limit and singularity avoidance)
+		- checking if the remaining points can be reached by kuka robot by doing Inverse kinematics, using (2018_Position-based kinematics for 7-DoF serial manipulators with global configuration control, joint limit and singularity avoidance)
 	- Newly generated points which survived the checking criteria are
 		- datalog: "12_april_2021_LogFile.log"
 		- points list: [[12_april_2021_point_co-ordinates_frames.png]]
@@ -117,7 +113,7 @@
 ---
 - May - Sep 2021
 	- This time, we have tried to implement a new type of 5th degree polynomial generation method.
-	- reference: "Local Path Planning And Motion Control For Agv In Positioning".[find it here](https://ieeexplore.ieee.org/document/637936)
+	- reference: "Local Path Planning And Motion Control For Agv In Positioning".(https://ieeexplore.ieee.org/document/637936)
 	- This method is originally meant for generation of 5th degree polynomial on a 2d plane which is used for trajectory planning of a mobile robot.
 	- We have modified the technique into a 3d spline generating code, which takes the inputs:
 		- first and the last of the spline segment
@@ -132,35 +128,14 @@
 	- After attempting to find a way to generate a 5th degree spline, we couldn't figure out how to involve neighbouring points alone to find the start and end angles that can match the kuka's robot's trajectory perfectly.
 	- We had to switch our technique again to using a novel **Quintic Bezier spline** generation technique developed for mobile robots for our usecase.
 	- reference: 
-		- "Planning Motion Trajectories for Mobile Robots Using Splines"[find it here](Sprunk, Christoph. "Planning motion trajectories for mobile robots using splines." (2008).)
-		-  Kinodynamic Motion Planning for Mobile Robots Using Splines. [find it here](Lau, Boris, Christoph Sprunk, and Wolfram Burgard. "Kinodynamic motion planning for mobile robots using splines." _2009 IEEE/RSJ International Conference on Intelligent Robots and Systems_. IEEE, 2009.)
-		- biagiotti melchiorri's 2008 book on trajectory planning for automatic machines and robots.[find it here](Biagiotti, Luigi, and Claudio Melchiorri. _Trajectory planning for automatic machines and robots_. Springer Science & Business Media, 2008.)
+		- "Planning Motion Trajectories for Mobile Robots Using Splines"(Sprunk, Christoph. "Planning motion trajectories for mobile robots using splines." (2008).)
+		-  Kinodynamic Motion Planning for Mobile Robots Using Splines. (Lau, Boris, Christoph Sprunk, and Wolfram Burgard. "Kinodynamic motion planning for mobile robots using splines." _2009 IEEE/RSJ International Conference on Intelligent Robots and Systems_. IEEE, 2009.)
+		- biagiotti melchiorri's 2008 book on trajectory planning for automatic machines and robots.(Biagiotti, Luigi, and Claudio Melchiorri. _Trajectory planning for automatic machines and robots_. Springer Science & Business Media, 2008.)
 ---
 - Jan - Feb 2022
 	- We have come very close to matching the Kuka robot's trajectory.
 	- Our final function takes start point, end point and all the intermediate control points as input and export a trajectory that is very close to Kuka robot's trajectory.
-	- We have considered 4 variables which had to be optimised in order to find a bezier curve that  matches with kuka's robot's spline well.    
-	 
-	```
-	1. Evaluation is pending 
-	2. Finalising the control variables is pending
-	3. Testing is pending
-	
-	```
-
----
-# END
-
-- intro 
-- fundamentals
-	- how the configurations were achieved with IK with only points as input
-	- spline
-	- coppelia-sim
-	-  point generation checks
-- related work
-- solution approach: 
-	- description of experiemnts
-	- trajectory creation
-- evaluation
-- future work
-- conclusion
+	- We have considered 4 variables which had to be optimised in order to find a bezier curve that  matches with kuka's robot's spline well.
+	- We have Evaluated the pipeline and results
+	- Control variables are optimised and finalised.
+	- Rigorous testing is performed and results are added in the report.    

@@ -5,7 +5,7 @@
 ![KUKA robot and its components](kuka_components.png)
 ![KUKA robot's working envelope](kuka_work_envelope.png)
 
-## Robot's trajectory (Blue) vs Generated trajectory (red): 
+## Robot's trajectory (Red) vs Generated trajectory (Blue): 
 ==The better the result, the better the trajectories match==
 
 ![Trajectory comparison 1](exp_03_all_exp_optimised_vs_individual_optimised.png)

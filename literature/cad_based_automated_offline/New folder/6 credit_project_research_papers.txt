@@ -1,0 +1,92 @@
+Robotic controls :
+
+online programming: we need to access the robotic arm inorder to control the movement .
+offline programming(OLP): we need not access the robotic arm inorder to control it and it is controlled 
+by program written using text based robot programming language.
+
+In particular, the OLP system in [3] uses geometric functions of CATIA (e.g., curve/surface intersection, a projection of the points onto the surface etc.) and 
+simulation function of KUKA Sim Pro (e.g., robot kinematics, collision detection etc.)
+
+1)
+title of the paper:
+Offline programming of an ABB robot using imported CAD models in robotstudio.
+
+short description:
+uses offline programming(OLP) to integrate virtual CAD model into programming environment.it is primary contained the setting up creation of the virtual workplaces for offline programming and simulation by using CAD models imported to the RobotStudio programming environment.
+OLP starts from 3D CAD model (Catia, Solid Works etc.) what is primary start of the creation workstation and workpieces then it is possible to insert modeled parts into Robot Studio.
+steps involved in this are 3D CAD model genereation,Tag creation,Trajectory planning,process planning followed by simulation and if simulation is good then the program is calibrated and loaded into Robot controller.
+the robot trajectory creation invloves sequential steps which follow as obtain workpiece' form from 3D CAD file-->select operating parameters -->Analyze workpiece->Generate curves on surface->Generate robot path->process simulation(if this is selected)->Robot program->calibration->robot controller->test and application.
+
+results: Proper function program created by offline method programming will allow us prior to implementation in the real production better debugging, optimize the overall layout of the workplace, improve work efficiency, eliminate collision states etc. The program, which is ultimately created is more-less usable in the real environment using a minimum of interference
+Link to the paper:https://www.researchgate.net/publication/286778192_Offline_Programming_of_an_ABB_Robot_Using_Imported_CAD_Models_in_the_RobotStudio_Software_Environment
+
+
+2)
+title of the paper:
+CAD-based robot path planning and simulation using OPEN
+
+short description:
+A CAD-based oﬀ-line programming (OLP) platform is developed based on OPEN CASCADE (OCC) open source libraries
+instead of buying a license of OLP platforms like CATIA or KUKA Sim Pro or ABB Robotics.
+
+In this CAD-based OLP platform is developed using OCC libraries with Microsoft VisualStudio. proposed platform 
+provides several features such as loading of the CAD model for task defination,generating a robotpath,manipulator’s accessibility verification,
+simulation to check and prevent a collision before converting into robot program and  allows a user to deﬁne and generate a path using the CAD 
+features (face,wire,edges,etc.)and simulate a given industrial task(like glue dispensing)in the virtual environment.
+
+OCC CAD kernels are used to extract the position information from CAD--> Different classes are used to extract the position information from a CAD model-->
+orientation of the workpiece with respect to the a given frame from the end-eﬀector is deﬁned by a transformation matrix--> These positions and 
+orientations are input into the robot inverse kinematics for transforming the joint coordinates-->As a result, individual angles for each joint
+of the manipulator are obtained to perform the simulation.
+
+Reasult: OLP platform according to their application requirements with low investment together irrespective of the training level of their operators.
+link:https://www.researchgate.net/publication/326538462_CAD-based_robot_path_planning_and_simulation_using_OPEN_CASCADE
+
+
+3)
+title of the paper:
+Robotic Welding of Ship-Subassemblies with fully automatic Offline-Programming
+
+short description:
+First, The standard-program is made using the off-line programming. Second, using the CAD interface,
+the job program which contains real size of a workpiece is made. Third, the job-program is transfered to robot controller.
+Finally, the robot controller execute the job-program line by line and controls welding robot.
+
+has two programs one standard-program and second the job-program
+the standard-program contains combination of three separate parts: a program-file, an rpy-file, and a rule-file.
+The standard program having information regarding the real size of the workpiece is a a job-program.
+
+robot body and workpiece modelling is done using VRML(virtual reality modeling language)
+
+3D geometric models of robot simulations are acquired from a TRIBON CAD interface--> this 3D model is converted into VRML-->
+here the genetic algorithm (GA) is used for our robot system (Davidor, 1991; Fonseca & Flemming, 1995; Munasinghe et al, 2003).
+Travel length minimization is more efficient than working time optimization
+
+results:
+Developed off-line programming is very easy for operators to use and maximizes the operating efficiency of 
+welding robot systems of the shipbuilding industry. In the future, due to intelligent robotic techniques such as 
+PC-based OLP, painstaking human labor will be reduced and manufacturing productivity in shipyards will be increased
+
+limk:https://www.researchgate.net/publication/221785949_Welding_Robot_Applications_in_Shipbuilding_Industry_Off-Line_Programming_Virtual_Reality_Simulation_and_Open_Architecture
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+

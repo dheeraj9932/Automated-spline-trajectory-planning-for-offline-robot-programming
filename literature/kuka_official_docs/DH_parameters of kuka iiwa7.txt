@@ -1,0 +1,5 @@
+the DH parameters of KUKA LBR iiwa7 in mm:
+d_bs=340
+d_se=400
+d_ew=400
+d_wf=126
